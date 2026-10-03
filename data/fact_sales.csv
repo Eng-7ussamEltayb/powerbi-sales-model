@@ -1,0 +1,5 @@
+sale_id,date_key,product_id,region,qty,unit_price
+1,20240105,1,Central,2,1500
+2,20240108,2,East,5,320
+3,20240202,3,Central,10,85
+4,20240301,2,West,8,320

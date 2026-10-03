@@ -1,0 +1,6 @@
+-- مقاييس DAX أساسية
+Total Revenue := SUMX(fact_sales, fact_sales[qty] * fact_sales[unit_price])
+Total Qty := SUM(fact_sales[qty])
+Avg Selling Price := DIVIDE([Total Revenue], [Total Qty])
+Revenue YTD := TOTALYTD([Total Revenue], dim_date[date])
+High Value Sales := CALCULATE([Total Revenue], FILTER(fact_sales, fact_sales[qty] * fact_sales[unit_price] > 1000))
